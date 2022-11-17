@@ -3,4 +3,5 @@ p {
 	background: yellow;
 	font-size: large;
 	text-align: center;
+	text-shadow: 2px 2px 2px darkslategray;
 }

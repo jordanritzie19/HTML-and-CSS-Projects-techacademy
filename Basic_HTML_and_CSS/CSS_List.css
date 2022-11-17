@@ -1,0 +1,17 @@
+ul {
+	list-style-type: square;
+	background: blue;
+}
+
+ul li {
+	color: red;
+}
+
+ol {
+	list-style-type: upper-roman;
+	background: blue;
+}
+
+ol li {
+	color: red;
+}
