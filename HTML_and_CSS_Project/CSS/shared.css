@@ -93,7 +93,7 @@ section {
 }
 
 .clearfix::after, /* :after is now ::after with double colon */
-.container::after, {
+.container::after {
     clear: both;
     display: table;
     content: " ";
