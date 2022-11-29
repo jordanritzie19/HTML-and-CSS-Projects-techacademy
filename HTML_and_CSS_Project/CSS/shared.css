@@ -30,7 +30,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #e91c1c;
-    text-shadow: 2px 2px 3p rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 h1::after { /* This is the underline */
