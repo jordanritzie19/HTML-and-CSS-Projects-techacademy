@@ -1,0 +1,67 @@
+.navbar-container {
+    max-height: 20px;
+    margin: 0, 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar {
+    width: 3.5%;
+    display: table;
+    margin: 0;
+    background-color: cyan;
+    color: #000;
+    border: 1px solid black;
+    list-style: none;
+    list-style-position: inside;
+}
+
+
+.navbar li{
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: -33%;
+    bottom: 0;
+    text-align: center;
+}
+
+.navbar li:hover {
+    background-color: rgb(140, 251, 251)
+}
+.photo-container {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 69.420%;
+    overflow: hidden;
+    filter: hue-rotate(270deg);
+    /* the 'right' edges of the photo wont be seen due to formatting */
+    border-radius: 3em 3em 3em 3em;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    
+}
+
+footer {
+    text-align: center;
+    font-weight: 850;
+}

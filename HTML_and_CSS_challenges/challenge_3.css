@@ -1,0 +1,11 @@
+table {
+    border: 0.5em dashed purple;
+}
+
+td, th {
+    padding: 4px;
+}
+
+th {
+    background-color: slategray;
+}
