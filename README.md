@@ -4,9 +4,9 @@ This is a display of sample websites I've made using HTML and CSS.
 
 ## Projects
 
-- [Feral Druid Guide](/HTML_and_CSS_Project/index.html)
-- [Gallery of my dog, ozzy](/One-Page%20Website/one_page_website.html)
-- [Movie Theater site](/bootstrap4_project/cinema_project.html)
+- [Feral Druid Guide](/HTML_and_CSS_Project)
+- [Gallery of my dog, ozzy](/One-Page%20Website)
+- [Movie Theater site](/bootstrap4_project)
 
 ### Feral Druid Guide
 
