@@ -4,6 +4,7 @@
 		<title>Ozzy the Golden Retriever</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 	
@@ -40,8 +41,8 @@
 					<!-- photo container 1-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_1.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_1.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(1)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy at a wet baseball diamond</p>
 							</div>
@@ -52,8 +53,8 @@
 					<!-- photo container 2-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_2.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_2.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(2)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy greeting me at the top of the stairs</p>
 							</div>
@@ -64,8 +65,8 @@
 					<!-- photo container 3-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_3.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_3.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(3)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy enjoying his birthday steak</p>
 							</div>
@@ -76,8 +77,8 @@
 					<!-- photo container 4-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_4.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_4.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(4)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy didnt want dried after bath, so got bath robe instead</p>
 							</div>
@@ -88,8 +89,8 @@
 					<!-- photo container 5-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_5.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_5.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(5)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy after walking into a mirror</p>
 							</div>
@@ -100,8 +101,8 @@
 					<!-- photo container 6-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_6.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_6.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(6)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy enjoying the new turf</p>
 							</div>
@@ -112,8 +113,8 @@
 					<!-- photo container 7-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_7.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_7.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(7)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy enoying a ride to the park</p>
 							</div>
@@ -124,8 +125,8 @@
 					<!-- photo container 8-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/ozzy_8.png" alt="picture of my dog Ozzy">
-							<div class="photo-overlay">
+							<img src="./images/thumb/ozzy_8.png" alt="picture of my dog Ozzy" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(8)">
 								<h3 class="enlarge-text">Click to Enlarge</h3>
 								<p>Ozzy mugging me</p>
 							</div>
@@ -137,6 +138,106 @@
 			</div>
 		</section>
 		<!-- End Gallery -->
+
+		<!-- Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="modal-photo-container">
+
+					<!-- Thumbnail image controls left side  -->  <!-- THIS NEEDS SOME EDITING K TY -->
+					<div class = left_column>
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_1.png" onclick="currentSlide(1)" alt="Ozzy all muddy at the baseball diamond">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_2.png" onclick="currentSlide(2)" alt="Ozzy greeting me at the stairs">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_3.png" onclick="currentSlide(3)" alt="Grandma gave ozzy a ham-bone">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_4.png" onclick="currentSlide(4)" alt="Ozzy in pajamas!">
+						</div>
+					</div>
+
+
+					<!-- lightbox -->
+					<div class="mySlides">
+						<div class="numbertext">1 / 8</div>
+						<img src="images/lightbox/ozzy_1.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 8</div>
+						<img src="images/lightbox/ozzy_2.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 8</div>
+						<img src="images/lightbox/ozzy_3.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 8</div>
+						<img src="images/lightbox/ozzy_4.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 8</div>
+						<img src="images/lightbox/ozzy_5.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6 / 8</div>
+						<img src="images/lightbox/ozzy_6.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">7 / 8</div>
+						<img src="images/lightbox/ozzy_7.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">8 / 8</div>
+						<img src="images/lightbox/ozzy_8.png" style="width:100%">
+					</div>
+
+					<!-- thumnail right side -->
+					<div class = right_column>
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_5.png" onclick="currentSlide(5)" alt="Ozzy wanting you to feel bad for him">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_6.png" onclick="currentSlide(6)" alt="Ozzy the turf-stealer">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_7.png" onclick="currentSlide(7)" alt="Ozzy on a car ride">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/lightbox/thumb/ozzy_8.png" onclick="currentSlide(8)" alt="Ozzy threatening to mug me">
+						</div>
+					</div>	
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+
+			</div>
+		</div>
 		
 		<!-- Video Gallery -->
 		<section id="videogallery">
